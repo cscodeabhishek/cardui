@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardsUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <!-- Delivered Items Card -->
+        <div class="card delivered-items">
+            <h3>Delivered Items</h3>
+            <div class="prod-container">
+                <!-- Repeat this block for each product -->
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Mint Leaves Loose</span>
+                        <p>1 Qty</p>
+                    </div>
+                    <input type="checkbox" id="checkbox1" class="prod-checkbox" checked>
+                    <label for="checkbox1"></label>
+                </div>
+                <div class="prod-quantity-holder">
+                    <h4>Select the Quantity</h4>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" onclick="decreaseQuantity(1)">-</button>
+                        <span class="quantity-number" id="quantity_1">01</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-header">
+                <img src="images/img.png" alt="Product Image" class="prod-image">
+                <div class="prod-info">
+                    <span>Apple Shimla</span>
+                    <p>1 Qty</p>
+                </div>
+                <!-- <input type="checkbox" id="checkbox1" class="prod-checkbox" checked>
+                <label for="checkbox1"></label> -->
+            </div>
+            <div class="prod-header">
+                <img src="images/img.png" alt="Product Image" class="prod-image">
+                <div class="prod-info">
+                    <span>Havmor Black Forest Cakes</span>
+                    <p>1 Qty</p>
+                </div>
+                <!-- <input type="checkbox" id="checkbox1" class="prod-checkbox" checked>
+                <label for="checkbox1"></label> -->
+            </div>
+        </div>
+        <!-- Yet to be Delivered Items Card -->
+        <div class="card yet-to-be-delivered-items">
+            <h3>Yet to be delivered items</h3>
+            <div class="prod-container">
+                <!-- Repeat this block for each product -->
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Valentino Sparkling White Grape Juice</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Ariel Matic Front Load</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Amul A+ Cheese Slices</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Refunded Items Card -->
+        <div class="card refunded-items">
+            <h3>Refunded Items</h3>
+            <div class="prod-container">
+                <!-- Repeat this block for each product -->
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Nandini Fresh Paneer</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Britania The Laughing Cow Cheeze Cheese</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+                <div class="prod-header">
+                    <img src="images/img.png" alt="Product Image" class="prod-image">
+                    <div class="prod-info">
+                        <span>Dairy Craft Fetta Cheese</span>
+                        <p>1 Qty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>   
+</body>
+</html>

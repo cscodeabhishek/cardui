@@ -1,0 +1,125 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prod-container {
+    margin-top: 10px;
+}
+
+.prod-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.prod-info {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.prod-info p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.prod-checkbox {
+    display: none;
+}
+
+.prod-checkbox + label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.prod-checkbox:checked + label {
+    background-color: red;
+    border-color: red;
+    position: relative;
+}
+
+.prod-checkbox:checked + label::before {
+    content: '✔';
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prod-quantity-holder {
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    height: 52px;
+    background-color: #f9f6ff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.prod-quantity-holder h4 {
+    margin: 6px 8px 6px 0px;
+    font-size: 14px;
+    color: #333;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity-number {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
